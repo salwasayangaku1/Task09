@@ -3,57 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="contact-container">
-        <h1>Let's stay connected</h1>
-        <p>It's never been easier to get in touch with Flex. Call us, use our live chat widget or email and we'll get back to you as soon as possible!</p>
-        
         <div class="contact-info">
+            <h2 class="contact-title">CONTACT</h2>
+            <h1>Let's stay connected</h1>
+            <p>It's never been easier to get in touch with Flex. Call us, use our live chat widget or email and we'll get back to you as soon as possible!</p>
+
+        
+        <div class="buttons-container">
+            <a href="#" class="button green">Open Positions</a>
+            <a href="#" class="button outline">About Us</a>
+        </div>
+
+        <Br></Br>
             <div class="contact-item">
-                <div class="icon">&#x2709;</div>
+                <div class="icon">&#9993;</div>
                 <div class="details">
                     <h2>Email</h2>
                     <p>contact@flex.co</p>
                 </div>
             </div>
             <div class="contact-item">
-                <div class="icon">&#x260E;</div>
+                <div class="icon">&#9742;</div>
                 <div class="details">
                     <h2>Phone</h2>
                     <p>+7-843-672-431</p>
                 </div>
             </div>
             <div class="contact-item">
-                <div class="icon">&#x1F3E0;</div>
+                <div class="icon">&#9873;</div>
                 <div class="details">
                     <h2>Office</h2>
-                    <p>1686, Geraldine Lane<br>New York, NY 10013</p>
+                    <p>1686, Geraldine Lane, New York, NY 10013</p>
                 </div>
             </div>
             <div class="contact-item">
-                <div class="icon">&#x1F4F1;</div>
+                <div class="icon">&#127760;</div>
                 <div class="details">
                     <h2>Socials</h2>
-                    <p>
-                        <a href="#">&#x1F426;</a>
-                        <a href="#">&#x1F4F7;</a>
-                        <a href="#">&#x1F4F1;</a>
-                        <a href="#">&#x1F4F1;</a>
-                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </div>
                 </div>
             </div>
         </div>
-        
         <div class="contact-form">
-            <form action="submit_form.php" method="post">
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Your message..." required></textarea>
+            <form action="#">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="pat@shuffle.dev" required>
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your message..." required></textarea>
                 <button type="submit">Send</button>
             </form>
         </div>
-    </div>
+
 </body>
 </html>
